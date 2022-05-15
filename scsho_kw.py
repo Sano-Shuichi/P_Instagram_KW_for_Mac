@@ -67,7 +67,7 @@ for row in sheet.iter_rows(min_row=6):
         if not os.path.exists(save_dir_2nd):
             os.mkdir(save_dir_2nd)
         
-        driver.save_screenshot(save_dir_2nd+'/'+kw+'_'+fmt+'.png')
+        driver.save_screenshot(f'{save_dir_2nd}/{kw}_{fmt}.png')
         
         driver.get('https://www.instagram.com/')
         time.sleep(5)
